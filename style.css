@@ -146,11 +146,33 @@
 /* Banner Section  */
 .banner-section {
   width: 100%;
+  height: 50vh;
+  background: #ffdfee8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-section .carousel-item img {
+  width: 26rem;
+  margin: auto;
+}
+.banner-section .carousel-item .banner-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-section .carousel-item p {
+  font-family: "Poppins";
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.8rem;
+}
+.banner-section {
+  width: 100%;
   height: 36rem;
   background: #ffdfee8a;
 }
 .banner-section .carousel-inner {
-  /* transition: all 5s ease; */
   width: 80%;
 }
 
@@ -166,6 +188,7 @@
 .grid-two-cols {
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  gap: 1.4rem;
 }
 
 .banner-section .slider-icon {
@@ -180,7 +203,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-}
+} 
 
 /* Product Section  */
 .product-section h2 {
@@ -604,8 +627,28 @@ textarea {
   }
   .about-section .pink-img {
     padding: 2.4rem 0;
+    text-align: center;
+  }
+  .banner-section .banner-content p{
+    font-size: 4rem;
+  }
+  .grid-two-cols .banner-content p {
+    line-height: 4.8rem;
   }
 }
+@media (width < 597px){
+  .banner-carousel-div{
+    width: 450px;
+  }
+  .grid-two-cols {
+    & .banner-content p {
+      line-height: 4.2rem;
+      padding-top: 2rem;
+    }
+  }
+
+}
+
 @media (width < 768px) {
   .grid-two-cols {
     grid-template-columns: 1fr;
@@ -615,12 +658,14 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 1rem;
     }
     & .banner-content p {
       text-align: center;
-      font-size: 4rem;
+      font-size: 3.4rem;
     }
-  }
+  } 
+  
   .banner-section {
     height: 60rem;
   }
@@ -651,6 +696,8 @@ textarea {
   .common-heading h1 {
     font-size: 3.2rem;
   }
+
+  
 }
 @media (width < 505px) {
   .footer .footer-panel2,
@@ -679,6 +726,18 @@ textarea {
     bottom: -5%;
   }
 }
+@media (width < 467px){
+  .grid-two-cols {
+    & .banner-content p {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      padding-top: 2rem;
+    }
+  }
+  .banner-carousel-div{
+    width: 340px;
+  }
+} 
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
