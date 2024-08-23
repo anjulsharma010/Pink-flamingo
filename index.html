@@ -10,8 +10,9 @@
     <!-- font-awesome-link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -52,91 +53,112 @@
     <div class="container header-navbar mb-5 mb-lg-0">
         <div class="row ">
             <div class="col">
-                <nav class="navbar navbar-expand-lg ">
+                <div class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fas fa-stream navbar-toggler-icon"></i>
                         </button>
-                        <div class="collapse navbar-collapse bottom-header" id="navbarNavDropdown">
+
+                        <div class="collapse navbar-collapse bottom-header" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#products"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="products.html">Dhoop Cones</a></li>
-                                        <li><a class="dropdown-item" href="#">Incense Holders</a></li>
-                                        <li><a class="dropdown-item" href="#">Yantras</a></li>
-                                        <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Pooja Thali Sets</a></li>
-                                        <li><a class="dropdown-item" href="#">Shankh</a></li>
-                                        <li><a class="dropdown-item" href="#">Kalash</a></li>
-                                        <li><a class="dropdown-item" href="#">Book Rests</a></li>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                                href="#">Dhoop Cones</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="products.html">Jar Cones</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Chandan Bamboo Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Backflow Cone Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Buddha Red Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Ountain Sandal Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Cone Sandal Dhoop</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Incenses Holders</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Tantras</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Incense Sticks</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Pooja Thali Sets</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Shankh</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Kalash</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Book Rests</a>
+                                        </li>
                                     </ul>
                                 </li>
+
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#services" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Jar Cones </a></li>
-                                        <li><a class="dropdown-item" href="#">Chandan Bamboo Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">Backflow Cone Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">ountain Sandal Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Cone Sandal Dhoop</a></li>
-                                    </ul>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="detailed-product-page.html">Courses</a>
+                                    <a class="nav-link" href="#courses">Courses</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#blogs">Blogs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Videos</a>
+                                    <a class="nav-link" href="#videos">Videos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact us</a>
+                                    <a class="nav-link" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Banner-section -->
-    <section class="banner-section d-flex align-items-center">
-        <div class="container">
+    <section class="banner-section d-flex align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
             <div class="row">
                 <div class="col">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active indicator-button" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
+                    <div id="carouselExample" class="carousel slide container-fluid">
+                        <div class="carousel-inner container">
                             <div class="carousel-item active">
                                 <div class="grid grid-two-cols">
-                                    <div class="banner-img">
-                                        <img src="images/Frame.png" class="d-block " alt="...">
-                                    </div>
+                                    <img src="images/Frame.png" class="d-block " alt="...">
                                     <div class="banner-content">
-                                        <p>Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</p>
+                                        <p>Transform Your Mind Soul: Discover Your Spiritual Path with Our Courses</p>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +166,7 @@
                                 <div class="grid grid-two-cols">
                                     <img src="images/Frame.png" class="d-block " alt="...">
                                     <div class="banner-content">
-                                        <p>Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</p>
+                                        <p>Transform Your Mind Soul: Discover Your Spiritual Path with Our Courses</p>
                                     </div>
                                 </div>
                             </div>
@@ -152,11 +174,25 @@
                                 <div class="grid grid-two-cols">
                                     <img src="images/Frame.png" class="d-block " alt="...">
                                     <div class="banner-content">
-                                        <p>Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</p>
+                                        <p>Transform Your Mind Soul: Discover Your Spiritual Path with Our Courses</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev pe-5" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                <i class="fa fa-chevron-left slider-icon"></i>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next ps-5" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <i class="fa fa-chevron-right slider-icon"></i>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -260,7 +296,8 @@
     </section>
 
     <!-- Blog Section  -->
-    <section class="review common-heading" id="blogs">
+
+    <section class="blog-section common-heading" id="blogs">
         <div class="container">
             <div class="row pt-5 pb-lg-5">
                 <div class="col-12 d-flex justify-content-center align-items-center">
@@ -268,43 +305,127 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class=" swiper review-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide  box">
-                        <img src="images/Rectangle 69.png" alt="img">
-                        <h3>The Power of Mindfulness</h3>
-                        <p>Mindfulness is the practice of being present and fully engaged in the moment. It is about
-                            paying attention to our thoughts, feelings, and sensations in a non-judgmental way.
-                        </p>
-                        <button class="btn">Read More</button>
+        <div class="container-blog">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <div class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="images/Rectangle 65.png" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">The Power of Mindfulness</h3>
+                                <p class="card__description">
+                                    Mindfulness is the practice of being present and fully engaged in the moment. It is
+                                    about paying attention to our thoughts, feelings, and sensations in a non-judgmental
+                                    way.
+
+                                </p>
+                                <button href="#" class="card__button">Read Mode</button>
+                                <div class="card-date d-flex justify-content-start mt-5">
+                                    <a href="#">11-08-2024</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="images/Rectangle 67.png" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Connecting with the Divine</h3>
+                                <p class="card__description">
+                                    Connecting with the Divine refers to the process of establishing a spiritual
+                                    connection or relationship with a higher power, such as God, the Universe, or a
+                                    higher consciousness.
+
+                                </p>
+
+                                <button href="#" class="card__button">Read More</button>
+                                <div class="card-date d-flex justify-content-start mt-5">
+                                    <a href="#">11-08-2024</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="images/Rectangle 69.png" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">The Beauty of Forgiveness</h3>
+                                <p class="card__description">
+                                    The beauty of forgiveness lies in its transformative power. It has the ability to
+                                    heal wounds and to restore relationships that have been damaged. Forgiveness brings
+                                    a new level of understanding
+
+                                </p>
+
+                                <button href="#" class="card__button">View More</button>
+                                <div class="card-date d-flex justify-content-start mt-5">
+                                    <a href="#">11-08-2024</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="images/Rectangle 65.png" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">The Power of Mindfulness</h3>
+                                <p class="card__description">
+                                    Mindfulness is the practice of being present and fully engaged in the moment. It is
+                                    about paying attention to our thoughts, feelings, and sensations in a non-judgmental
+                                    way.
+
+                                </p>
+                                <button href="#" class="card__button">Read Mode</button>
+                                <div class="card-date d-flex justify-content-start mt-5">
+                                    <a href="#">11-08-2024</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="images/Rectangle 67.png" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Connecting with the Divine</h3>
+                                <p class="card__description">
+                                    Connecting with the Divine refers to the process of establishing a spiritual
+                                    connection or relationship with a higher power, such as God, the Universe, or a
+                                    higher consciousness.
+
+                                </p>
+
+                                <button href="#" class="card__button">Read More</button>
+                                <div class="card-date d-flex justify-content-start mt-5">
+                                    <a href="#">11-08-2024</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide box">
-                        <img src="images/Rectangle 67.png" alt="img">
-                        <h3>Connecting with the Divine</h3>
-                        <p>Connecting with the Divine refers to the process of establishing a spiritual connection or
-                            relationship with a higher power, such as God, the Universe, or a higher consciousness.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
-                    <div class="swiper-slide box">
-                        <img src="images/Rectangle 65.png" alt="img">
-                        <h3>The Beauty of Forgiveness</h3>
-                        <p>The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds
-                            and to restore relationships that have been damaged. Forgiveness brings a new level of
-                            understanding.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
-                    <div class="swiper-slide box">
-                        <img src="images/Rectangle 69.png" alt="img">
-                        <h3>The Beauty of Forgiveness</h3>
-                        <p>The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds
-                            and to restore relationships that have been damaged. Forgiveness brings a new level of
-                            understanding.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
                 </div>
             </div>
         </div>
@@ -312,7 +433,7 @@
 
 
     <!-- Lets Connect  -->
-    <section class="connect-section common-heading" id="contact">
+    <section class="connect-section common-heading mt-5" id="contact">
         <div class="container">
             <div class="row p-5">
                 <div class="col-12 d-flex justify-content-center align-items-center">
@@ -427,31 +548,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
-    <!-- Swiper from CDN -->
+    <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Script file link -->
     <script>
-        var swiper = new Swiper(".review-slider", {
+        /*=============== SWIPER JS ===============*/
+        let swiperCards = new Swiper(".card__content", {
             loop: true,
-            spaceBetween: 20,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
+            spaceBetween: 32,
+            grabCursor: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
             },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
             breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                768: {
+                920: {
                     slidesPerView: 2,
                 },
-                1020: {
+                1110: {
                     slidesPerView: 3,
                 },
             },
         });
     </script>
+
 </body>
 
 </html>
