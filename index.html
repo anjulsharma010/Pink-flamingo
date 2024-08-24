@@ -201,14 +201,14 @@
 
     <!-- Product Section  -->
     <section class="product-section">
-        <div class="container">
+        <div class="container ">
             <div class="row mb-4 mt-5">
                 <div class="col-12 ps-4">
                     <h2>Shop From Our Top Categories</h2>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container ">
             <div class="row ">
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="card  border-0">
@@ -277,9 +277,9 @@
                 </div>
             </div>
         </div>
-        <div class="container w-75">
+        <div class="container">
             <div class="row pt-lg-5 pb-lg-5 d-flex justify-content-center align-items-center">
-                <div class="col-lg-4 pink-img">
+                <div class="col-lg-4 pink-img d-flex justify-content-lg-end justify-content-center">
                     <img src="images/pink_flamingo.png" alt="">
                 </div>
                 <div class="col-lg-8">
@@ -306,8 +306,8 @@
             </div>
         </div>
         <div class="container-blog">
-            <div class="card__container swiper">
-                <div class="card__content">
+            <div class="card__container swiper d-flex justify-content-center">
+                <div class="card__content  ">
                     <div class="swiper-wrapper">
                         <div class="card__article swiper-slide">
                             <div class="card__image">
@@ -441,7 +441,35 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container input-div">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6 order-md-1 order-2">
+                    <div class="row inputbox-div">
+                        <div class="col-md-6 d-flex align-items-center justify-content-start input mt-4">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-start input mt-4">
+                            <i class="fas fa-phone px-2"></i>
+                            <input type="text" placeholder="Phone Number">
+                        </div>
+                        <div class="col-12  d-flex align-items-center justify-content-start input mt-4 email">
+                            <i class="fas fa-envelope px-2"></i>
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <div class="col-12 text-area mt-4">
+                            <textarea  rows="5" placeholder="Write your message here"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-md-3 order-md-2 order-1 mb-5">
+                    <img src="images/OBJECTS.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- <div class="container">
             <div class="row mb-5">
                 <div class="col-md-6 connect-inputs order-md-1 order-2">
                     <div class="user my-4 d-flex align-items-center justify-content-center">
@@ -467,7 +495,7 @@
                     <img src="images/OBJECTS.png" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- Footer section  -->
@@ -485,9 +513,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="footer-panel2">
-                    <div class="col-lg-3">
+            <div class="">
+                <div class="footer-panel2 row">
+                    <div class="col-lg-3 col-sm-4 col-6">
                         <ul>
                             <p>Contact Us</p>
                             <a href="">Search</a>
@@ -497,7 +525,7 @@
                             <a href="">Amazon sciences</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Information</p>
                             <a href="">Demo Store</a>
@@ -507,7 +535,7 @@
                             <a href="">Blogs</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Account</p>
                             <a href="">Search</a>
@@ -517,7 +545,7 @@
                             <a href="">Help</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Quick Links</p>
                             <a href="https://www.google.com">Privacy Policy</a>
@@ -527,7 +555,7 @@
                             <a href="">Cone Dhoop</a>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-8 col-12">
                         <ul class="social-media">
                             <p>Social Media.</p>
                             <a href="">follow us on social media and stay update</a>
@@ -569,7 +597,7 @@
             },
 
             breakpoints: {
-                920: {
+                768: {
                     slidesPerView: 2,
                 },
                 1110: {
