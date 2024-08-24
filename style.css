@@ -571,49 +571,60 @@
 .product-category .pagination {
   font-size: 2rem;
 }
-.page-item:first-child .page-link {
+
+.page-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
   border-radius: 50%;
   height: 4.2rem;
   width: 4.2rem;
+  color: #000000;
+}
+.page-li .circle{
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 600;
+  color: #000000;
   font-family: "poppins";
-  color: #ffffff;
-  padding-left: 1.7rem;
-  padding-top: 0.8rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  height: 4.2rem;
+  width: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.page-li .rect{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #000000;
+  font-family: "poppins";
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  height: 4.2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-li .circle:active, .rect:active{
   background-color: #fa5c98;
 }
 
-.page-item:nth-child(2) .page-link,
-.page-item:nth-child(3) .page-link {
-  border-radius: 50%;
-  height: 4.2rem;
-  width: 4.2rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-weight: 600;
-  font-family: "poppins";
-  color: black;
-  padding-left: 1.7rem;
-  padding-top: 0.8rem;
-}
-.page-item:nth-child(4) .page-link {
-  height: 4.2rem;
-  width: 4.2rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-weight: 600;
-  font-family: "poppins";
-  color: black;
-  padding-left: 1.7rem;
-  padding-top: 0.8rem;
-}
-.page-item:nth-child(4) .page-link {
-  width: 8rem;
-  padding-left: 1.7rem;
-  padding-top: 0.8rem;
-}
+
+
+
+
 @media (width < 992px) {
   * {
     font-size: 56%;
@@ -709,6 +720,10 @@
   }
   .common-heading h1 {
     font-size: 3.2rem;
+  }
+  .product-category .box{
+    margin: auto;
+    width: 40rem;
   }
 }
 @media (width < 505px) {

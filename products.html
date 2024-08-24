@@ -59,65 +59,96 @@
     <div class="container header-navbar mb-5 mb-lg-0">
         <div class="row ">
             <div class="col">
-                <nav class="navbar navbar-expand-lg ">
+                <div class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fas fa-stream navbar-toggler-icon"></i>
                         </button>
-                        <div class="collapse navbar-collapse bottom-header" id="navbarNavDropdown">
+
+                        <div class="collapse navbar-collapse bottom-header" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#products"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="products.html">Dhoop Cones</a></li>
-                                        <li><a class="dropdown-item" href="#">Incense Holders</a></li>
-                                        <li><a class="dropdown-item" href="#">Yantras</a></li>
-                                        <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Pooja Thali Sets</a></li>
-                                        <li><a class="dropdown-item" href="#">Shankh</a></li>
-                                        <li><a class="dropdown-item" href="#">Kalash</a></li>
-                                        <li><a class="dropdown-item" href="#">Book Rests</a></li>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                                href="#">Dhoop Cones</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="products.html">Jar Cones</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Chandan Bamboo Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Backflow Cone Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Buddha Red Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Ountain Sandal Dhoop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="">Cone Sandal Dhoop</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Incenses Holders</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Tantras</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Incense Sticks</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Pooja Thali Sets</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Shankh</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Kalash</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Book Rests</a>
+                                        </li>
                                     </ul>
                                 </li>
+
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#services" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Jar Cones </a></li>
-                                        <li><a class="dropdown-item" href="#">Chandan Bamboo Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">Backflow Cone Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">ountain Sandal Dhoop</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Cone Sandal Dhoop</a></li>
-                                    </ul>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="detailed-product-page.html">Courses</a>
+                                    <a class="nav-link" href="#courses">Courses</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#blogs">Blogs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Videos</a>
+                                    <a class="nav-link" href="#videos">Videos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact us</a>
+                                    <a class="nav-link" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
@@ -446,18 +477,15 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12  d-flex justify-content-center">
-                    <nav aria-label="Page navigation example ">
-                        <ul class="pagination">
-                            <li class="page-item active p-3"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item p-3"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item p-3"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item p-3"><a class="page-link page-next" href="#">Next</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-12 d-flex justify-content-center">
+                    <ul class="d-flex">
+                        <li class="page-li"><a class="circle active" href="#">1</a></li>
+                        <li class="page-li"><a class="circle" href="#">2</a></li>
+                        <li class="page-li"><a class="circle" href="#">3</a></li>
+                        <li class="page-li"><a class="rect" href="#">Next</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
     </section>
 
 
@@ -475,9 +503,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="footer-panel2">
-                    <div class="col-lg-3">
+            <div class="">
+                <div class="footer-panel2 row">
+                    <div class="col-lg-3 col-sm-4 col-6">
                         <ul>
                             <p>Contact Us</p>
                             <a href="">Search</a>
@@ -487,7 +515,7 @@
                             <a href="">Amazon sciences</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Information</p>
                             <a href="">Demo Store</a>
@@ -497,7 +525,7 @@
                             <a href="">Blogs</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Account</p>
                             <a href="">Search</a>
@@ -507,7 +535,7 @@
                             <a href="">Help</a>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <ul>
                             <p>Quick Links</p>
                             <a href="https://www.google.com">Privacy Policy</a>
@@ -517,7 +545,7 @@
                             <a href="">Cone Dhoop</a>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-8 col-12">
                         <ul class="social-media">
                             <p>Social Media.</p>
                             <a href="">follow us on social media and stay update</a>
